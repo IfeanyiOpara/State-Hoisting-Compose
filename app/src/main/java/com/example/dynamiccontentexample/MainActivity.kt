@@ -21,7 +21,7 @@ import androidx.compose.ui.Modifier
 
 class MainActivity : ComponentActivity() {
 
-    private val viewModel: MainViewModel by viewModels()
+    //private val viewModel: MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
-    fun MainScreen() {
+    fun MainScreen(viewModel: MainViewModel = MainViewModel()) {
 //    //val greetingListState = remember { mutableStateListOf("John", "Ran", "Takeoff") }
 //    val newNameStateContent = remember {
 //        mutableStateOf("")
